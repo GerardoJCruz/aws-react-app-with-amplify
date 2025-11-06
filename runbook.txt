@@ -5,3 +5,23 @@ You'll be able to find some screenshots with the step-by-step of this process in
 A- Set-up Environment. folder: set-up-environment/
 A-1.Create User with IAM. images: 1-3
 A-2. Create credentials for the users in the Security Credentials. Images: 4-8
+
+B- Create React App
+B-1 Create React App using the command: npx create-react-app <my-app-name>
+	Images 1-2
+B-2 Move inside the new file (<my-app-name>) and execute amplify-init
+	Image 3
+
+C- Authentication with Cognito
+C-1 Run the command: amplify add auth and verify in aws amplify al apps
+	Image 1 -3
+C-2 Create a pool of users in AWS Cognito
+	Images 4 & 5
+C-3. Modify the App.js file. You can copy and paste the code from the App.js added to this repo. Temporally comment the line 19, and from 31 to 33
+	Images 6 - 8 
+c-4. Install the amplify/UI-react using the command 'npm install aws-amplify @aws-amplify/ui-react' and then run the comman 'npm start' to launch the app locally. 
+	Images 9 & 10
+C-5. Create a user using a valid email and verify the Cognito users pools to verify the creation
+	Images 11 - 14
+
+

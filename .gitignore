@@ -1,0 +1,63 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ----------------------------------------------------------------------
+# GLOBAL IGNORES (applies to the root of the repo, if present)
+# ----------------------------------------------------------------------
+
+# Standard system files
+.DS_Store
+
+# ----------------------------------------------------------------------
+# MY-QUIZ-APP IGNORES (Rules adjusted to be relative to the project root)
+# ----------------------------------------------------------------------
+
+# Dependencies
+/my-quiz-app/node_modules
+/my-quiz-app/.pnp
+my-quiz-app/.pnp.js
+
+# Build/Production/Testing
+/my-quiz-app/coverage
+/my-quiz-app/build
+/my-quiz-app/dist
+
+# Local Environment Variables
+my-quiz-app/.env.local
+my-quiz-app/.env.development.local
+my-quiz-app/.env.test.local
+my-quiz-app/.env.production.local
+.env # Also ignore any .env file placed directly in the app root
+
+# Logs
+my-quiz-app/npm-debug.log*
+my-quiz-app/yarn-debug.log*
+my-quiz-app/yarn-error.log*
+
+# ----------------------------------------------------------------------
+# AMPLIFY-CLI IGNORES (Crucial files moved from nested .gitignore)
+# ----------------------------------------------------------------------
+# Ensure all files containing environment IDs, deployment info, or secrets are ignored.
+
+my-quiz-app/amplify/\#current-cloud-backend
+my-quiz-app/amplify/.config/local-*
+my-quiz-app/amplify/logs
+my-quiz-app/amplify/mock-data
+my-quiz-app/amplify/mock-api-resources
+my-quiz-app/amplify/backend/amplify-meta.json
+my-quiz-app/amplify/backend/.temp
+my-quiz-app/aws-exports.js
+my-quiz-app/awsconfiguration.json
+my-quiz-app/amplifyconfiguration.json
+my-quiz-app/amplifyconfiguration.dart
+my-quiz-app/amplify-build-config.json
+my-quiz-app/amplify-gradle-config.json
+my-quiz-app/amplifytools.xcconfig
+my-quiz-app/.secret-*
+my-quiz-app/**.sample
+
+my-quiz-app/amplify/backend/awscloudformation/
+my-quiz-app/amplify/hooks/post-push.sh.sample
+my-quiz-app/amplify/hooks/pre-push.js.sample
+my-quiz-app/src/amplifyconfiguration.json
+my-quiz-app/src/aws-exports.js
+
