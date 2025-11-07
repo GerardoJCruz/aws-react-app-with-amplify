@@ -6,13 +6,13 @@ A- Set-up Environment. folder: set-up-environment/
 A-1.Create User with IAM. images: 1-3
 A-2. Create credentials for the users in the Security Credentials. Images: 4-8
 
-B- Create React App
+B- Create React App. Folder: Create-react-app
 B-1 Create React App using the command: npx create-react-app <my-app-name>
 	Images 1-2
 B-2 Move inside the new file (<my-app-name>) and execute amplify-init
 	Image 3
 
-C- Authentication with Cognito
+C- Authentication with Cognito. Folder: authentication-with-cognito
 C-1 Run the command: amplify add auth and verify in aws amplify al apps
 	Image 1 -3
 C-2 Create a pool of users in AWS Cognito
@@ -24,4 +24,23 @@ c-4. Install the amplify/UI-react using the command 'npm install aws-amplify @aw
 C-5. Create a user using a valid email and verify the Cognito users pools to verify the creation
 	Images 11 - 14
 
+D- Funcionality and styling. Folder: funtionality-and-styling
+D-1. Create two new files (Quiz.js and quizData.js). Copy and paste the code from the sames files from this repo\
+	Images 1 - 4
+D-2. Uncomment the lines 19 and line 32 in the App.js file
+	Image 5
+D-3. Save and reload the local app in the browser to verify the changes and the styling. 
+	Images 6 - 8 
+
+E Host the front-end in Amplify via GitHub (for CI/CD): Folder: push-local-to-GitHub
+E-1. Create a new private GitHub repository dedicated for the CI/CD of you app. 
+	Images 1 & 2
+E-2. Init and configure git in your local project. link it to your new remote repository. Push your commit and verify all files are transfer
+	Images 3 - 5
+E-3. Connect your front-end deployment integrating the GitHub repository. This way any time a change is commited and push into your repository, it will trigger a updated deploy in your amplify app automatically. 
+	Images 6 - 12
+E-4. Create an IAM role for the the deployment. Make sure it counts with the right policy (AdministratorAccess-Amplify). Review and verify the configuration.
+	Images 13 - 16
+E-5. Deploy app and open it from the domain link provided by amplify. 
+	Images 17 - 19. 
 
